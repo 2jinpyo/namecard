@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap');
+:root{--bg:#090909;--panel:#11110f;--gold:#c8a96e;--muted:#9c968b;--line:#302a20}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--bg);color:#f4f0e8;font-family:'DM Sans','Noto Sans KR',sans-serif}
+body{background:radial-gradient(ellipse at 50% 25%,#282117 0%,#11100e 36%,#080808 75%)}
+.page{min-height:100vh;max-width:680px;margin:auto;padding:30px 22px 24px;display:flex;flex-direction:column;align-items:center}
+.topline{width:100%;display:flex;justify-content:space-between;color:#a49a87;font-size:10px;letter-spacing:2.4px}
+.live{display:flex;align-items:center;gap:8px}.live i{width:6px;height:6px;border-radius:50%;background:#c8a96e;box-shadow:0 0 10px #c8a96e}
+.card{position:relative;overflow:hidden;width:100%;max-width:430px;margin:auto 0;background:linear-gradient(145deg,#1c1a16,#10100f 60%,#17130e);border:1px solid #55452b;border-radius:4px;padding:42px 30px 24px;text-align:center;box-shadow:0 25px 90px #000b, inset 0 0 45px #c8a96e08}
+.card:before{content:"";position:absolute;inset:8px;border:1px solid #c8a96e30;pointer-events:none}
+.ornament{position:absolute;width:130px;height:130px;border:1px solid #c8a96e18;transform:rotate(45deg)}.ornament-one{top:-95px;left:-80px}.ornament-two{bottom:-100px;right:-75px}
+.monogram{width:88px;height:88px;margin:0 auto 24px;border-radius:50%;border:1px solid var(--gold);padding:5px;display:grid;place-items:center;color:var(--gold);font:38px 'Playfair Display',serif;background:#090909;overflow:hidden}
+.monogram img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+.eyebrow{font-size:10px;letter-spacing:3px;color:var(--gold);text-transform:uppercase}
+h1{font:500 clamp(30px,8vw,42px) 'Playfair Display','Noto Sans KR',serif;letter-spacing:.3px;margin:12px 0 7px}
+.role{font-size:12px;color:#c0b7a8;letter-spacing:1.6px}
+.gold-rule{height:1px;width:58px;background:#6e5832;margin:25px auto;position:relative}.gold-rule span{position:absolute;width:5px;height:5px;background:var(--gold);transform:rotate(45deg);left:calc(50% - 2px);top:-2px}
+.bio{font-size:13px;line-height:1.9;color:#bdb5a8;margin:0 auto 24px;max-width:300px;white-space:pre-wrap}
+.contact-list{display:flex;flex-direction:column;gap:2px;text-align:left;margin:0 auto 23px;max-width:320px}
+.contact-list a{min-height:48px;display:flex;align-items:center;gap:13px;padding:0 10px;color:#e5dfd3;text-decoration:none;border-bottom:1px solid #ffffff12;font-size:12px;letter-spacing:.2px}
+.contact-icon{color:var(--gold);width:24px;display:grid;place-items:center}.arrow{margin-left:auto;color:#8c7956}
+.save{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 24px;border:1px solid var(--gold);color:#e9d6ae;text-decoration:none;font-size:12px;letter-spacing:1px;transition:.2s}
+.save:hover{background:#c8a96e18}
+.card-footer{display:flex;justify-content:space-between;margin-top:34px;padding-top:14px;border-top:1px solid #ffffff18;color:#776f62;font-size:8px;letter-spacing:1.5px}
+footer{font-size:9px;letter-spacing:2px;color:#625b50;margin-top:24px}footer span{color:var(--gold);padding:0 8px}
+.admin-wrap{min-height:100vh;padding:32px 18px;display:grid;place-items:center;background:radial-gradient(ellipse at top,#282117,#090909 65%)}
+.admin-panel,.editor{width:100%;max-width:760px;background:#12110f;border:1px solid #4c3d27;padding:30px;border-radius:6px;box-shadow:0 25px 80px #0008}
+.admin-panel{max-width:420px}.admin-kicker{color:var(--gold);font-size:10px;letter-spacing:2.5px}
+.admin-panel h1,.editor h1{font:36px 'Playfair Display',serif;margin:12px 0}.admin-panel p,.editor p{color:#aaa195;font-size:13px}
+form{display:grid;gap:16px;margin-top:25px}label{display:grid;gap:8px;color:#cfc5b5;font-size:12px}
+input,textarea{width:100%;background:#090909;border:1px solid #393126;color:#f4f0e8;padding:12px;font:13px inherit;border-radius:3px;outline:none}input:focus,textarea:focus{border-color:var(--gold)}textarea{min-height:90px;resize:vertical}
+button{border:0;background:var(--gold);color:#17130c;padding:13px 16px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;gap:9px;cursor:pointer;border-radius:3px}button:disabled{opacity:.6;cursor:wait}
+.back{display:inline-block;margin-top:24px;color:var(--gold);font-size:12px;text-decoration:none}
+.editor-head{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}.editor-head h1{margin-bottom:5px}.ghost{background:transparent;color:#d8c59f;border:1px solid #5d4b30}
+.editor-grid{display:grid;grid-template-columns:1fr 1fr;gap:17px;margin:28px 0}.editor-grid label:nth-child(4){grid-column:1/-1}
+.editor h2{font:18px 'Playfair Display',serif;color:#e8d7b7;margin:30px 0 15px}
+.toggles{display:flex;flex-wrap:wrap;gap:12px}.toggle{display:flex;align-items:center;gap:7px;background:#1b1915;border:1px solid #3a3124;padding:10px 12px;border-radius:3px}.toggle input{width:auto;accent-color:var(--gold)}
+.accent{display:flex;align-items:center;margin-top:22px}.accent input{width:55px;height:38px;padding:3px}
+.save-btn{margin-top:26px;min-width:180px}.status{color:#d9c49b!important;margin-top:14px}.editor .back{display:block}
+@media(max-width:560px){.page{padding:22px 14px}.card{padding:35px 21px 22px}.editor{padding:22px 17px}.editor-grid{grid-template-columns:1fr}.editor-grid label:nth-child(4){grid-column:auto}.editor-head{flex-direction:column}.ghost{align-self:flex-end}}
+
+.unlock-wrap{min-height:100vh;display:grid;place-items:center;padding:24px;background:radial-gradient(ellipse at 50% 35%,#2a2115,#090909 68%)}
+.unlock-card{width:100%;max-width:390px;text-align:center;padding:42px 30px 28px;background:linear-gradient(145deg,#1b1915,#0e0e0d);border:1px solid #6a5432;box-shadow:0 25px 90px #000b;position:relative}
+.unlock-card:before{content:"";position:absolute;inset:7px;border:1px solid #c8a96e25;pointer-events:none}
+.lock-mark{width:58px;height:58px;margin:0 auto 24px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold)}
+.unlock-card h1{font:40px 'Playfair Display',serif;margin:12px 0}
+.unlock-card p{color:#aaa195;font-size:13px;margin:0 0 25px}
+.unlock-card form{margin:0;gap:12px}
+.unlock-card input{text-align:center;letter-spacing:7px;font-size:18px}
+.unlock-card button{width:100%}
+.unlock-error{color:#e6a19a;font-size:12px;margin-top:15px}
+.unlock-foot{margin-top:30px;color:#766b59;font-size:9px;letter-spacing:2px}
